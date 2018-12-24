@@ -9,7 +9,7 @@ def localver(name):
 	if ln == "":
 		return False
 	else:
-		return ln.split("==")[1]
+		return ln.split("==")[1].split("\n")[0]
 
 def parse_args():
 	p = argparse.ArgumentParser()
